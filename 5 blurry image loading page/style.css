@@ -1,0 +1,38 @@
+/* LATO FONT */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Figtree:ital,wght@0,400;0,700;1,300&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+
+/* font-family: 'Crimson Text', serif;
+font-family: 'Figtree', sans-serif;
+font-family: 'Lato', sans-serif; */
+:root {
+    --green: rgb(0, 255, 98);
+    --gray: rgb(247, 247, 247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.nightcafe.studio/jobs/eSbs6k8MB4iw6o9EdwD9/eSbs6k8MB4iw6o9EdwD9_5.3945x.jpg?tr=w-9999,c-at_max');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading {
+    font-family: 'Lato';
+    font-size: 150px;
+    color: whitesmoke;
+    font-weight: 100;
+    letter-spacing: 10px;
+    opacity: 0;
+}
