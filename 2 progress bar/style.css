@@ -1,0 +1,120 @@
+/* LATO FONT */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Figtree:ital,wght@0,400;0,700;1,300&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+
+/* font-family: 'Crimson Text', serif;
+font-family: 'Figtree', sans-serif;
+font-family: 'Lato', sans-serif; */
+:root {
+    --green: rgb(0, 255, 98);
+    --gray: rgb(247, 247, 247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 51, 88);
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.progress {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.steps {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps>div {
+    background-color: var(--gray);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 3px solid var(--gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    transition-delay: .4s;
+
+}
+
+.progress-bar {
+    width: calc(100 * 0.7vw);
+    height: 5px;
+    position: absolute;
+    background-color: var(--gray);
+    z-index: -2;
+    top: calc(50% - 2px);
+}
+
+.progress-bar-green {
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    background-color: var(--green);
+    top: calc(50% - 2px);
+    z-index: -1;
+    transition: .5s ease;
+
+}
+
+.buttons {
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 111.125px);
+
+}
+
+button {
+    transition: backgroud-color .5s;
+
+    padding: 1px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--gray);
+}
+
+.button-active {
+    background-color: var(--green);
+}
+
+.button-disabled {
+    cursor: not-allowed;
+    background-color: var(--gray);
+    color: grey;
+}
+
+.circle:nth-child(1) {
+    border-color: var(--green);
+}
