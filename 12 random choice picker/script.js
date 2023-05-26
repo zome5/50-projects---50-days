@@ -1,6 +1,6 @@
 const input = document.querySelector('input');
-
 const choices = document.querySelector('.choices')
+let spans = document.querySelectorAll('span')
 window.addEventListener('keydown', e => {
     if (e.key === 'Enter') {
         let arr = [];
@@ -19,6 +19,44 @@ window.addEventListener('keydown', e => {
             arr = [];
         }
 
-
+        spans = document.querySelectorAll('span')
     }
 })
+
+pickRandom();
+
+function pickRandom() {
+
+    const len = spans.length
+
+    setTimeout(() => {
+        for (let x = 0; x < len; x++) {
+
+            const randPick = Math.floor(Math.random() * spans.length);
+            setTimeout(() => {
+                spans[randPick].style.backgroundColor = "#fff"
+            }, 300)
+            setTimeout(() => {
+                spans[randPick].style.backgroundColor = 'rgb(123, 61, 131)'
+            }, 350)
+        }
+
+    }, 1)
+
+}
+
+
+// if (i <= len) {
+//     spans[i].style.backgroundColor = "white"
+//     setTimeout(spans[i].style.backgroundColor = 'rgb(123, 61, 131)', 200)
+// } else if (i > len) {
+//     spans[i].style.backgroundColor = "white"
+//     spans[i].style.backgroundColor = 'rgb(123, 61, 131)'
+// } else if (i > 2 * len) {
+//     spans[i].style.backgroundColor = "white"
+//     spans[i].style.backgroundColor = 'rgb(123, 61, 131)'
+// } else {
+//     spans[i].style.backgroundColor = "white"
+//     spans[i].style.backgroundColor = 'rgb(123, 61, 131)'
+// }
+// }
