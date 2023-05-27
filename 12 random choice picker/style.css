@@ -72,3 +72,29 @@ textarea {
     border-radius: 50px;
     margin: 0 10px;
 }
+
+button.clear {
+    width: 150px;
+    padding: 10px;
+    height: 40px;
+    position: relative;
+    top: 80px;
+    right: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: Tahoma;
+    font-size: 20px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(157, 23, 175);
+    background-color: rgba(148, 161, 27, 0.404);
+    opacity: .5;
+    transition: .2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
