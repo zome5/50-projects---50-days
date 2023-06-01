@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bgc1 {
+    width: 100vw;
+    height: 46vh;
+    background-color: rgb(214, 225, 230);
+}
+
+.bgc2 {
+    width: 100vw;
+    height: 54vh;
+    background-color: #276e8a;
+}
+
+nav {
+    width: 55px;
+    height: 50px;
+    position: fixed;
+    background-color: #fff;
+    border: 2px solid black;
+    left: calc(50% - 27.5px);
+    top: calc(46% - 25px);
+    font-size: 55px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 2px 5px 1px rgba(0, 0, 0, 0.295);
+    color: #0c7ca8;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+nav>.fa-bars {
+    right: 14px;
+    position: relative;
+
+}
+
+nav>.fa-x {
+    font-size: 0;
+}
+
+nav>div {
+    font-size: 0;
+}
+
+nav:hover {
+
+    transform: scale(1.15);
+    border: 2px solid black;
+}
+
+.show {
+    width: 500px;
+    height: 60px;
+    left: calc(50% - 250px);
+    top: calc(46% - 30px);
+}
+
+nav.show:hover {
+    transform: none;
+}
+
+nav.show>.fa-x {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: grey;
+}
+
+nav.show>.fa-bars {
+    font-size: 0;
+}
+
+nav.show>div {
+    font-size: 25px;
+    transition: .3s ease-in;
+
+}
+
+nav span {
+    margin: 0 15px;
+    display: inline-block;
+    transition: .2s;
+    cursor: pointer;
+}
+
+span:hover {
+    color: black;
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.507);
+}
